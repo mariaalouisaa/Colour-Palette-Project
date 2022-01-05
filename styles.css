@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 2em;
+}
+
+.colours-container {
+  display: flex;
+}
+
+.colour {
+  width: 18vw;
+  height: 70vh;
+  box-shadow: 5px 5px 5px rgb(114, 114, 114, 0.7);
+  border-radius: 10px;
+}
+
+.color-1 {
+  height: 85%;
+  background: chocolate;
+  border-radius: 10px 10px 0 0;
+}
