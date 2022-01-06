@@ -15,8 +15,11 @@ body {
   border-radius: 10px;
 }
 
-.color-1 {
+.colour-1,
+.colour-2,
+.colour-3,
+.colour-4,
+.colour-5 {
   height: 85%;
-  background: chocolate;
   border-radius: 10px 10px 0 0;
 }
