@@ -16,6 +16,20 @@ body {
   margin: 0.5em;
 }
 
+.shuffle {
+  color: rgb(43, 43, 43);
+  background: none;
+  border: none;
+  float: right;
+  margin: 7px 7px 0 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.shuffle:hover {
+  color: rgb(187, 47, 47);
+}
+
 .colour-div p {
   font-size: 1.2em;
   margin-top: 10px;
