@@ -10,3 +10,4 @@ A colour generator that shows **five** random colours on load. Also includes:
 - *DOM Manipulation* and *onclick events*
 
  
+<img width="700" alt="page-printscreen" src="https://user-images.githubusercontent.com/82417131/148586250-b577c1f5-11d1-42c1-b5aa-389fb703e89a.png">
