@@ -1,4 +1,4 @@
-let characters = "abcdef0123456789";
+const characters = "abcdef0123456789";
 
 function generateCode() {
   let code = [];
@@ -12,11 +12,18 @@ function generateCode() {
 }
 
 //select the colour divs from the html
-let divs = document.getElementsByClassName("colour-div");
+const divs = document.getElementsByClassName("colour-div");
 // turn the HTMLCollection into an array that is mappable
-let divsArr = [...divs];
+const divsArr = [...divs];
 divsArr.map((div) => {
   let code = generateCode();
   div.childNodes[3].innerText = code;
   div.childNodes[1].style.backgroundColor = code;
+  div.children[0].children[0].addEventListener("click", changeColour);
 });
+
+function changeColour() {
+  let code = generateCode();
+  this.parentNode.style.backgroundColor = code;
+  this.parentNode.parentNode.children[1].innerText = code;
+}
