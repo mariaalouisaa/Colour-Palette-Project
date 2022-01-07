@@ -39,3 +39,15 @@ body {
   height: 90%;
   border-radius: 10px 10px 0 0;
 }
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 143, 0.9);
+  font-weight: 600;
+}
