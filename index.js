@@ -11,6 +11,19 @@ function generatecode() {
   return "#" + code.join("");
 }
 
+//select the colour divs from the html
+let divs = document.getElementsByClassName("colour-div");
+// turn the HTMLCollection into an array that is mappable
+let divsArr = [...divs];
+divsArr.map((div) => {
+  let code = generatecode();
+  div.childNodes[3].innerText = code;
+  div.childNodes[1].style.backgroundColor = code;
+});
+
+/*
+First Attempt - very repetitive
+
 let colourOne = generatecode();
 let colourTwo = generatecode();
 let colourThree = generatecode();
@@ -28,3 +41,4 @@ document.getElementById("colour-2").style.backgroundColor = colourTwo;
 document.getElementById("colour-3").style.backgroundColor = colourThree;
 document.getElementById("colour-4").style.backgroundColor = colourFour;
 document.getElementById("colour-5").style.backgroundColor = colourFive;
+*/
